@@ -1,7 +1,9 @@
 package question1;
-
+  
+import java.awt.event.*;
 import java.awt.*;
 import javax.swing.*;
+import question1.Ensemble;
 
 public class IHMTestEnsemble extends JFrame {
 
@@ -71,11 +73,15 @@ public class IHMTestEnsemble extends JFrame {
         button1 = new JButton("union");
         button1.setBackground(java.awt.Color.red);
         button1.setName("union");
-        button1.addActionListener(null  // à compléter, par une instance de
-                                        // classe anonyme, usage de
-                                        // unionActionPerformed voir en bas de
-                                        // page
-        );
+        button1.addActionListener(new ActionListener(){  
+    public void actionPerformed(ActionEvent e){
+        
+       String S1 = textField1.getText();
+       String S2 = textField2.getText();
+       //Ensemble s = S1.union(S2);
+       
+        }  
+    });
 
         panel3.add(button1);
         button2 = new JButton("intersection");

@@ -2,8 +2,9 @@ package question2;
 
 import java.util.List;
 import java.util.Map;
-// à  compléter
+import java.util.LinkedList;
 import java.util.StringTokenizer;
+import java.util.HashMap;
 
 public class Chapitre2CoreJava2 {
 
@@ -12,15 +13,20 @@ public class Chapitre2CoreJava2 {
      * 
      **/
     public static List<String> listeDesMots() {
-        List<String> liste = null; // à  compléter
 
-        StringTokenizer st = new StringTokenizer(Chapitre2CoreJava2.CHAPITRE2,
-                "[](){};, :.\n\"");
-        // à  compléter
+        List<String> lst 
+        = new LinkedList<String>(); 
 
-        return liste;
+        StringTokenizer tk =new StringTokenizer(
+             Chapitre2CoreJava2.CHAPITRE2,"[](){};, :.\n\"");
+        while(tk.hasMoreTokens()){
+        lst.add(tk.nextToken());
+        }
+
+        return lst;
     }
-
+     
+    
     /**
      * Obtention d'une liste de couples <String,Integer>. 
      * A chaque mot présent dans la liste, est associé son nombre d'occurrence.
@@ -28,11 +34,33 @@ public class Chapitre2CoreJava2 {
      * @param liste la liste des mots
      */
     public static Map<String, Integer> occurrencesDesMots(List<String> liste) {
-        Map<String, Integer> table = null; // à  compléter
-        // à  compléter
-        // à  compléter
-        return table;
+        Map<String, Integer> tab = new HashMap<String, Integer>(); 
+        StringTokenizer tk = new StringTokenizer(Chapitre2CoreJava2.CHAPITRE2,
+                "[](){};, :.\n\"");
+        while(tk.hasMoreTokens()){
+            StringTokenizer tk2 = new StringTokenizer(Chapitre2CoreJava2.CHAPITRE2,
+                "[](){};, :.\n\"");
+            String f=tk.nextToken();
+            int oc=0;
+            while(tk2.hasMoreTokens()){if(f.equals(tk2.nextToken()))oc++;}
+            tab.put(f, oc);
+        }        
+                
+        return tab;
     }
+    
+    
+     // public int Occurr(){
+        // StringTokenizer st = new StringTokenizer(Chapitre2CoreJava2.CHAPITRE2,
+                // "[](){};, :.\n\"");
+                
+    // int oc=0;
+    // while(st.hasMoreTokens()){
+        // if(this.equals(st.nextToken()))oc++;
+        // } return oc;
+    
+    
+    // }
 
     public static final String CHAPITRE2 =
 

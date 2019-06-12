@@ -1,0 +1,7 @@
+#BlueJ class context
+comment0.target=Memento
+comment1.params=articleSave
+comment1.target=Memento(java.lang.String)
+comment2.params=
+comment2.target=java.lang.String\ getSavedArticle()
+numComments=3

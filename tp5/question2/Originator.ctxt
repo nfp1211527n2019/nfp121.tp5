@@ -1,0 +1,11 @@
+#BlueJ class context
+comment0.target=Originator
+comment1.params=
+comment1.target=Originator()
+comment2.params=newArticle
+comment2.target=void\ set(java.lang.String)
+comment3.params=
+comment3.target=Memento\ storeInMemento()
+comment4.params=memento
+comment4.target=java.lang.String\ restoreFromMemento(Memento)
+numComments=5

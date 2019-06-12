@@ -1,0 +1,10 @@
+#BlueJ class context
+comment0.target=Caretaker
+comment1.params=
+comment1.target=Caretaker()
+comment2.params=m
+comment2.target=void\ addMemento(Memento)
+comment2.text=\r\n\ An\ example\ of\ a\ method\ -\ replace\ this\ comment\ with\ your\ own\r\n\r\n\ @param\ \ y\ \ a\ sample\ parameter\ for\ a\ method\r\n\ @return\ \ \ \ the\ sum\ of\ x\ and\ y\r\n
+comment3.params=index
+comment3.target=Memento\ getMemento(int)
+numComments=4
